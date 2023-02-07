@@ -1,4 +1,4 @@
-public abstract class Embarcacion {
+public class Embarcacion {
     protected Capitan capitan;
     protected long precioBase=30000;
     protected long valorAdicional=0;
@@ -10,7 +10,12 @@ public abstract class Embarcacion {
         this.anoDeFabricacion = anoDeFabricacion;
         this.longitudEnMetros = longitudEnMetros;
     }
-    public abstract long calcularAlquiler();
+    public long calcularAlquiler(){
+        if(anoDeFabricacion>2020){
+            this.valorAdicional+=20000;
+        }
+        return (this.precioBase+this.valorAdicional);
+    };
 
 
 }

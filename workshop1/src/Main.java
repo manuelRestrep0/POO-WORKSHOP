@@ -13,25 +13,38 @@ public class Main {
 
         Makaia makaia = new Makaia();
         //alquier de embarcaciones
-        System.out.println("--------------------");
+        System.out.println("yate lujoso--------------------");
         makaia.alquilarEmbarcacion(yateLujoso);
-        System.out.println("--------------------");
+        System.out.println("yate sin lugo--------------------");
         makaia.alquilarEmbarcacion(yateSinLujo);
-        System.out.println("--------------------");
+        System.out.println("yate completo--------------------");
         makaia.alquilarEmbarcacion(yate);
-        System.out.println("--------------------");
+        System.out.println("velero grande--------------------");
         makaia.alquilarEmbarcacion(veleroGrande);
-        System.out.println("--------------------");
+        System.out.println("velero pequeno--------------------");
         makaia.alquilarEmbarcacion(veleroPequeno);
-        System.out.println("--------------------");
+        System.out.println("velero completo--------------------");
         makaia.alquilarEmbarcacion(velero);
-        System.out.println("--------------------");
+
 
         //Compra de yates
+        System.out.println("compra yate lujoso--------------------");
         makaia.comprarYate(yateLujoso);
-        System.out.println("--------------------");
+        System.out.println("compra yate sin lujo--------------------");
         makaia.comprarYate(yateSinLujo);
-        System.out.println("--------------------");
+        System.out.println("compra yate completo.--------------------");
         makaia.comprarYate(yate);
+
+        //metodo para ver si un velero es grande o no.
+        System.out.println("------------------------");
+        makaia.confirmarTamanoVelero(veleroGrande);
+        System.out.println("------------------------");
+        makaia.confirmarTamanoVelero(veleroPequeno);
+
+        // metodo para ver si un yate es lujoso o no
+        System.out.println("------------------------");
+        makaia.confirmarLujoYate(yateLujoso);
+        System.out.println("------------------------");
+        makaia.confirmarLujoYate(yateSinLujo);
     }
 }

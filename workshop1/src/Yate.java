@@ -6,16 +6,12 @@ public class Yate extends Embarcacion{
         this.cantidadDeCamarotes = cantidadDeCamarotes;
     }
 
-
-    @Override
-    public long calcularAlquiler() {
-        if(calcularLujo()) super.precioBase+=50000;
-        if(super.anoDeFabricacion>2020) super.valorAdicional+=20000;
-        return (super.precioBase+super.valorAdicional);
-    }
-
     public boolean calcularLujo(){
         if(cantidadDeCamarotes>7) return true;
         else return false;
     };
+
+    public int getCantidadDeCamarotes() {
+        return cantidadDeCamarotes;
+    }
 }
